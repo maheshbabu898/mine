@@ -1,0 +1,13 @@
+// create the conda environment
+conda create -n csc_sefund python=3.9
+
+// activate your environment
+conda activate csc_sefund
+
+// see where you're at (if you're at "base", try activating the environment again)
+conda info
+
+// this is how to remove environment
+conda env remove -n ENV_NAME
+
+git init -m csc_se_fund  

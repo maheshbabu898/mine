@@ -11,3 +11,12 @@ conda info
 conda env remove -n ENV_NAME
 
 git init -m csc_se_fund  
+
+// add all files to the current tracking
+git add .
+
+// see the repo's current status
+git status
+
+// see past logs
+git log

@@ -68,18 +68,20 @@ def actual_good_add_up(number):
         return (
             sum(list(range(0, number + 2, 2)))
             if number >= 0
-            else sum(list(range(number, 0, 2)))
+            else sum(list(range(number - 2, 0, 2)))
         )
     # If Odd Number
     return (
         sum(list(range(1, number + 2, 2)))
         if number >= 0
-        else sum(list(range(number, 1, 2)))
+        else sum(list(range(number - 2, 1, 2)))
     )
 
 
 if __name__ == "__main__":
-    new_list = [30, 40, 8, 9, 20, 15]
-    print(minimum(new_list))
-    print(f"Add Even: {add_even(new_list)}")
-    print(actual_good_add_up(5))
+    # new_list = [30, 40, 8, 9, 20, 15]
+    # print(minimum(new_list))
+    # print(f"Add Even: {add_even(new_list)}")
+    # print(actual_good_add_up(5))
+    test_value = int(input("input a number"))
+    print(actual_good_add_up(test_value))
